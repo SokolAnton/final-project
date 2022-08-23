@@ -1,0 +1,113 @@
+// .header{
+//     background-color: transparent;
+//     width: 100%;
+//     height: 400px;
+//     background-image:url(../img/1559021879_6.jpg) ;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     padding: 10px 5px;
+//     &--container{
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }
+// .title{
+//     font-family: $DynaPuff;
+//     color: white;
+//     font-size: 22px;
+// }
+.navBurger {
+    
+    background: $burger;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    transition: transform 0.7s, opacity 1s;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .navBurger.show {
+    transform: translateX(0%);
+    opacity: 1;
+
+  }
+  
+  .list {
+    padding-top: 65px;
+    padding: 65px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+  }
+  .hamburger {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    margin-left: auto;
+    width: 45px;
+    height: 35px;
+    z-index: 1;
+  }
+  
+  .hamburger span {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    width: inherit;
+    height: 5px;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .top-line {
+    top: 0px;
+  }
+  
+  .center-line {
+    top: 15px;
+  }
+  
+  .bottom-line {
+    bottom: 0px;
+  }
+  
+  .top-line.active {
+    transform: translateY(15px) rotate(45deg);
+  }
+  
+  .center-line.active {
+    opacity: 0;
+  }
+  
+  .bottom-line.active {
+    transform: translateY(-15px) rotate(-45deg);
+  }
+
+  .list{
+    position: relative;
+    transform: skewY(-15deg);
+  }
+  .list-item{
+    width: 50%;
+    position: relative;
+    transition: all .5s ease;
+    &:hover{
+        background-color: rgb(27, 109, 136);
+        transform: translateX(-50px);
+    }
+}
+  .list-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background-color: darkcyan;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+  }

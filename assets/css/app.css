@@ -1,0 +1,183 @@
+.header {
+  background-image: url(../img/1634696881_1-krot-mobi-p-mnogo-raznikh-mashin-mashini-krasivo-foto-1.jpg);
+}
+.header--container {
+  padding: 28px 0;
+}
+.header--container .container--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.header--container .container--nav .nav--left {
+  margin-right: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.header--container .container--nav .nav--left svg:hover {
+  fill: red;
+  cursor: pointer;
+}
+.header--container .container--nav .nav--left svg {
+  margin-left: 12px;
+  margin-right: 39px;
+}
+.header--container .container--nav .nav--right {
+  display: flex;
+  justify-content: space-between;
+}
+.header--container .container--nav .nav--right svg {
+  margin-left: 35px;
+  margin-right: 14px;
+}
+
+.navBurger {
+  background: #002A32;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  transition: transform 0.7s, opacity 1s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.navBurger.show {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.list {
+  padding-top: 65px;
+  padding: 65px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+}
+
+.hamburger {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-left: auto;
+  width: 45px;
+  height: 35px;
+  z-index: 1;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  background: #ffffff;
+  width: inherit;
+  height: 5px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.top-line {
+  top: 0px;
+}
+
+.center-line {
+  top: 15px;
+}
+
+.bottom-line {
+  bottom: 0px;
+}
+
+.top-line.active {
+  transform: translateY(15px) rotate(45deg);
+}
+
+.center-line.active {
+  opacity: 0;
+}
+
+.bottom-line.active {
+  transform: translateY(-15px) rotate(-45deg);
+}
+
+.list {
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+.list-item {
+  width: 50%;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.list-item:hover {
+  background-color: rgb(27, 109, 136);
+  transform: translateX(-50px);
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: darkcyan;
+  filter: brightness(0.7);
+  transform-origin: right;
+  transform: skewY(45deg);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+  color: #3E5860;
+}
+
+ul li {
+  list-style: none;
+  color: white;
+}
+
+li + li {
+  margin-top: 80px;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  transition: all 0.4s ease;
+}
+.icon:hover {
+  color: aqua;
+}
+.icon:hover > svg {
+  fill: aqua;
+}
+.icon:hover > svg > path {
+  fill: aqua;
+}/*# sourceMappingURL=app.css.map */

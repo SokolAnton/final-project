@@ -1,0 +1,42 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto ;
+}
+body{
+    overflow-x: hidden;
+    color: $text-color;
+    // font-family: 'DynaPuff', cursive;
+// font-family: 'Roboto Mono', monospace;
+}
+
+ul li{
+    list-style: none;
+    color: white;
+}
+li+li{
+    margin-top: 80px;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    transition: all .4s ease;
+    &:hover{
+        >svg{
+            fill: aqua;
+            >path{
+                fill: aqua;
+            }
+        }
+        color: aqua;  
+    }
+}

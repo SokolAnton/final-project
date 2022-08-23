@@ -1,0 +1,51 @@
+.header {
+    background-image: url(../img/1634696881_1-krot-mobi-p-mnogo-raznikh-mashin-mashini-krasivo-foto-1.jpg);
+
+    &--container {
+        padding: 28px 0;
+
+        .container {
+            &--nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
+                .nav {
+                    
+                    &--left {
+                        margin-right: 350px;
+                         display: flex;
+                        justify-content: space-between;
+                        svg:hover{
+                            fill: red;
+                            cursor: pointer;
+                        }
+                        svg {
+                            margin-left: 12px;
+                            margin-right: 39px;
+                        }
+                    }
+                    &--right{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        svg{
+                            margin-left: 35px;
+                            margin-right: 14px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
