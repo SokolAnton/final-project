@@ -1,4 +1,13 @@
-@mixin  d-flex-between {
+@mixin d-flex-between {
     display: flex;
     justify-content: space-between;
+}
+
+@mixin forSlider {
+    padding-left: 95px;
+    padding-top: 165px;
+    padding-bottom: 260px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }

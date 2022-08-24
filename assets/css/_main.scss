@@ -1,0 +1,51 @@
+.main {
+    padding-top: 92px;
+
+    &--slider {
+        display: flex;
+        flex-direction: row;
+        .slider {
+            &--firstPage {
+                @include forSlider;
+                background-image: url(../img/1634696881_1-krot-mobi-p-mnogo-raznikh-mashin-mashini-krasivo-foto-1.jpg);
+
+            }
+
+            &--secondPage {
+                @include forSlider;
+                background-image: url(../img/Audi_Many_486451.jpg);
+            }
+
+            &--thirdPage {
+                @include forSlider;
+                background-image: url(../img/1559021879_6.jpg);
+            }
+
+        }
+    }
+}
+
+.text {
+    >span {
+        font-family: 'Dancing Script';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 152.5%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.045em;
+        color: white;
+    }
+
+    >p {
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 133.5%;
+        letter-spacing: 0.045em;
+        color: white;
+        max-width: 350px;
+    }
+}

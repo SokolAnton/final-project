@@ -1,5 +1,9 @@
 .header {
-  background-image: url(../img/1634696881_1-krot-mobi-p-mnogo-raznikh-mashin-mashini-krasivo-foto-1.jpg);
+  background-color: rgb(197, 179, 179);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 .header--container {
   padding: 28px 0;
@@ -22,10 +26,10 @@
   margin-right: 350px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .header--container .container--nav .nav--left svg:hover {
   fill: red;
-  cursor: pointer;
 }
 .header--container .container--nav .nav--left svg {
   margin-left: 12px;
@@ -34,6 +38,7 @@
 .header--container .container--nav .nav--right {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .header--container .container--nav .nav--right svg {
   margin-left: 35px;
@@ -45,7 +50,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 30%;
   height: 100vh;
   transition: transform 0.7s, opacity 1s;
   transform: translateX(100%);
@@ -58,8 +63,7 @@
 }
 
 .list {
-  padding-top: 65px;
-  padding: 65px 10px;
+  padding: 100px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,6 +71,7 @@
 }
 
 .hamburger {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   position: relative;
@@ -123,6 +128,15 @@
   background-color: rgb(27, 109, 136);
   transform: translateX(-50px);
 }
+.list-item > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.list-item > a > svg {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 .list-item::before {
   content: "";
@@ -135,6 +149,60 @@
   filter: brightness(0.7);
   transform-origin: right;
   transform: skewY(45deg);
+}
+
+.main {
+  padding-top: 92px;
+}
+.main--slider {
+  display: flex;
+  flex-direction: row;
+}
+.main--slider .slider--firstPage {
+  padding-left: 95px;
+  padding-top: 165px;
+  padding-bottom: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/1634696881_1-krot-mobi-p-mnogo-raznikh-mashin-mashini-krasivo-foto-1.jpg);
+}
+.main--slider .slider--secondPage {
+  padding-left: 95px;
+  padding-top: 165px;
+  padding-bottom: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/Audi_Many_486451.jpg);
+}
+.main--slider .slider--thirdPage {
+  padding-left: 95px;
+  padding-top: 165px;
+  padding-bottom: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/1559021879_6.jpg);
+}
+
+.text > span {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 152.5%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.045em;
+  color: white;
+}
+.text > p {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 133.5%;
+  letter-spacing: 0.045em;
+  color: white;
+  max-width: 350px;
 }
 
 *,
@@ -167,6 +235,12 @@ li + li {
 .d-flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.d-flex-beetwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {

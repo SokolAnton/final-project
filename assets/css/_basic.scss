@@ -27,6 +27,11 @@ li+li{
     display: flex;
     flex-direction: column;
 }
+.d-flex-beetwen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .icon{
     transition: all .4s ease;
@@ -40,3 +45,4 @@ li+li{
         color: aqua;  
     }
 }
+

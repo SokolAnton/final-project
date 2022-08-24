@@ -16,3 +16,12 @@ $("#js-hamburger").click(function () {
     $("#js-bottom-line").toggleClass("active");
     $("#js-nav").toggleClass("show");
   });
+
+
+  $('.slider').slick({
+    dots: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
+
+  
